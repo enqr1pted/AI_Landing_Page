@@ -138,3 +138,167 @@ nav .login a{
     color: #ccc;
 }
 
+.prompt-sec .prompt-img .tabs{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+
+.prompt-sec .prompt-img .tabs a{
+    color: #fff;
+    background: #231f1c;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.prompt-sec .prompt-img .tabs a.active,
+.prompt-sec .prompt-img .tabs a:hover{
+    color: #231f1c;
+    background: #a3e635;
+}
+
+.showcase{
+    padding: 40px 80px;
+    margin-top: 20px;
+}
+
+.showcase h3{
+    color: #fff;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.showcase .text-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.showcase .text-sec p{
+    width: 50%;
+    text-align: justify;
+}
+
+.showcase .text-sec .images,
+.showcase .image-sec{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.showcase .text-sec .images img,
+.showcase .image-sec img{
+    width: 256px;
+    border-radius: 40px;
+    border: 2px solid #c5c5c5;
+}
+
+.services .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px 0;
+}
+
+.services .header h3{
+    color: #fff;
+    font-size: 56px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.services .service-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 80px;
+    padding-bottom: 40px;
+}
+
+.services .service-items .item{
+    background: #171717;
+    padding: 20px;
+    border-radius: 40px;
+    width: 25%;
+}
+
+.services .service-items .item .title{
+    display: flex;
+    align-items: center;
+    background: #232c29;
+    padding: 5px 20px 5px 5px;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.services .service-items .item .title .gradient{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.services .service-items .item:nth-child(1) .title .gradient{
+    background-image: linear-gradient(to
+    top, #3f51b1 0%, #5a55ae 13%,
+    #7b5fac 25%, #8f6aae 38%, #a86aa4
+    50%, #cc6b8e 62%, #f18271 75%,
+    #f3a469 87%, #f7c978 100%);
+}
+
+.services .service-items .item:nth-child(2) .title .gradient{
+    background-image: linear-gradient(to
+    top, #4fb576 0%, #44c489 30%,
+    #28a9ae 46%, #28a2b7 59%, #4c7788
+    71%, #6c4f63 86%, #432c39 100%);
+}
+
+.services .service-items .item:nth-child(3) .title .gradient{
+    background-image: linear-gradient(to
+    right, #f83600 0%, #f9d423 100%);
+}
+
+.services .service-items .item:nth-child(4) .title .gradient{
+    background-image: linear-gradient(to
+    top, #0fd850 0%, #f9f047 100%);
+}
+
+.services .service-items .item .desc h5{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.services .service-items .item.active{
+    background: #a3e635;
+}
+
+.services .service-items .item.active .title{
+    background: #000;
+}
+
+.services .service-items .item.active .desc h5{
+    color: #000;
+}
+
+.services .service-items .item.active .desc p{
+    color: #313131;
+}
